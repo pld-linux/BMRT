@@ -24,7 +24,7 @@ programmable surface, displacement, light, and volume shaders. BMRT's
 input scene files and shaders are largely compatible with our
 commercial renderer, Entropy, as well as those of PhotoRealistic
 RenderMan.
-										    
+
 %description -l pl
 BMRT jest ray tracerem, który zosta³ u¿yty przy produkcji niektórych
 filmów, takich jak A Bug's Life, Stuart Little, The Cell, Hollow Man,
