@@ -6,6 +6,7 @@ Release:	2
 License:	Free use, no source
 Group:		Applications/Graphics
 Source0:	%{name}%{version}h.linux-glibc2.tar.gz
+# Source0-md5:	dfbe508d03b352a01949679809cd3e06
 URL:		http://www.bmrt.org/
 ExclusiveArch:	%{ix86}
 Requires:	libstdc++-compat
