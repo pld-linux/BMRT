@@ -2,15 +2,16 @@ Summary:	BMRT - Blue Moon Rendering Tools
 Summary(pl):	Blue Moon Rendering Tools - Narzêdzia do renderingu
 Name:		BMRT
 Version:	2.5
-Release:	1
+Release:	2
 License:	Free use, no source
 Group:		Applications/Graphics
 Group(de):	Applikationen/Grafik
 Group(pl):	Aplikacje/Grafika
 Source0:	%{name}%{version}h.linux-glibc2.tar.gz
 URL:		http://www.bmrt.org/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:	%{ix86}
+Requires:	libstdc++-compat
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
