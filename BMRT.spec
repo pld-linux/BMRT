@@ -25,6 +25,8 @@ input scene files and shaders are largely compatible with our
 commercial renderer, Entropy, as well as those of PhotoRealistic
 RenderMan.
 
+No longer available. Use Aqsis (http://aqsis.sf.net) instead.
+
 %description -l pl
 BMRT jest ray tracerem, który zosta³ u¿yty przy produkcji niektórych
 filmów, takich jak A Bug's Life, Stuart Little, The Cell, Hollow Man,
@@ -36,6 +38,9 @@ powierzchnie, zaburzenia, ¶wiat³a, cienie. Pliki wej¶ciowe ze scenami
 i cieniami BMRT s± w du¿ej czê¶ci zgodne z komercyjnym rendererem tej
 samej firmy o nazwie Entropy, a tak¿e z programem PhotoRealistic
 RenderMan.
+
+BMRT nie jest ju¿ dostêpny. Zamiast niego mo¿na u¿ywaæ Aqsis
+(http://aqsis.sf.net).
 
 %prep
 %setup -q -n %{name}%{version}
