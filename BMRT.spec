@@ -5,6 +5,7 @@ Version:	2.5
 Release:	1
 Copyright:	Other
 Group:		Applications/Graphics
+Group(de):	Applikationen/Grafik
 Group(pl):	Aplikacje/Grafika
 Source0:	%{name}%{version}h.linux-glibc2.tar.gz
 URL:		http://www.bmrt.org/
@@ -30,7 +31,7 @@ install bin/* $RPM_BUILD_ROOT%{_bindir}
 install lib/* $RPM_BUILD_ROOT%{_libdir}
 install include/* $RPM_BUILD_ROOT%{_includedir}
 install shaders/*.sl $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
-install -m 644 shaders/*.slc $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
+install shaders/*.slc $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
 install -m 755 shaders/*.linux.slc $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
 install shaders/*.h $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
 
