@@ -9,9 +9,8 @@ Source0:	%{name}%{version}h.linux-glibc2.tar.gz
 # Source0-md5:	dfbe508d03b352a01949679809cd3e06
 URL:		http://www.bmrt.org/
 ExclusiveArch:	%{ix86}
-Requires:	libstdc++-compat
+Requires:	compat-libstdc++-2.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 BMRT is a ray tracer that has been used in the production of several
@@ -25,7 +24,7 @@ input scene files and shaders are largely compatible with our
 commercial renderer, Entropy, as well as those of PhotoRealistic
 RenderMan.
 
-No longer available. Use Aqsis (http://aqsis.sf.net) instead.
+No longer available. Use Aqsis (http://aqsis.sf.net/) instead.
 
 %description -l pl
 BMRT jest ray tracerem, który zosta³ u¿yty przy produkcji niektórych
@@ -40,7 +39,7 @@ samej firmy o nazwie Entropy, a tak¿e z programem PhotoRealistic
 RenderMan.
 
 BMRT nie jest ju¿ dostêpny. Zamiast niego mo¿na u¿ywaæ Aqsis
-(http://aqsis.sf.net).
+(http://aqsis.sf.net/).
 
 %prep
 %setup -q -n %{name}%{version}
@@ -54,7 +53,6 @@ install lib/* $RPM_BUILD_ROOT%{_libdir}
 install include/* $RPM_BUILD_ROOT%{_includedir}
 install shaders/*.sl $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
 install shaders/*.slc $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
-install -m 755 shaders/*.linux.slc $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
 install shaders/*.h $RPM_BUILD_ROOT%{_datadir}/%{name}/shaders
 
 %clean
@@ -67,7 +65,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/html/* License doc/*.pdf
 %attr(755,root,root) %{_bindir}/*
-%{_includedir}/*.h
-%attr(-,root,root) %{_datadir}/%{name}/shaders/*
-%{_libdir}/*.a
 %attr(755,root,root) %{_libdir}/*.so
+%dir %{_datadir}/%{name}
+%dir %{_datadir}/%{name}/shaders
+%{_datadir}/%{name}/shaders/*.sl
+%{_datadir}/%{name}/shaders/*[!x].slc
+%attr(755,root,root) %{_datadir}/%{name}/shaders/*.linux.slc
+%{_libdir}/*.a
+%{_includedir}/*.h
