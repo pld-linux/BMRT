@@ -11,7 +11,6 @@ ExclusiveArch:	%{ix86}
 Requires:	libstdc++-compat
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 BMRT is a ray tracer that has been used in the production of several
