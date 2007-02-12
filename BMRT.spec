@@ -1,5 +1,5 @@
 Summary:	BMRT - Blue Moon Rendering Tools
-Summary(pl.UTF-8):   Blue Moon Rendering Tools - Narzędzia do renderingu
+Summary(pl.UTF-8):	Blue Moon Rendering Tools - Narzędzia do renderingu
 Name:		BMRT
 Version:	2.5
 Release:	2
