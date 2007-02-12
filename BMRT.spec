@@ -1,5 +1,5 @@
 Summary:	BMRT - Blue Moon Rendering Tools
-Summary(pl):	Blue Moon Rendering Tools - NarzÍdzia do renderingu
+Summary(pl.UTF-8):   Blue Moon Rendering Tools - Narzƒôdzia do renderingu
 Name:		BMRT
 Version:	2.5
 Release:	2
@@ -26,19 +26,19 @@ RenderMan.
 
 No longer available. Use Aqsis (http://aqsis.sf.net/) instead.
 
-%description -l pl
-BMRT jest ray tracerem, ktÛry zosta≥ uøyty przy produkcji niektÛrych
-filmÛw, takich jak A Bug's Life, Stuart Little, The Cell, Hollow Man,
+%description -l pl.UTF-8
+BMRT jest ray tracerem, kt√≥ry zosta≈Ç u≈ºyty przy produkcji niekt√≥rych
+film√≥w, takich jak A Bug's Life, Stuart Little, The Cell, Hollow Man,
 Woman on Top.
 
-BMRT obs≥uguje rzeczy takie jak odbicia i cienie; ∂wiat≥a punktowe;
-tekstury, ∂rodowisko, mapowanie cieni; w pe≥ni programowalne
-powierzchnie, zaburzenia, ∂wiat≥a, cienie. Pliki wej∂ciowe ze scenami
-i cieniami BMRT s± w duøej czÍ∂ci zgodne z komercyjnym rendererem tej
-samej firmy o nazwie Entropy, a takøe z programem PhotoRealistic
+BMRT obs≈Çuguje rzeczy takie jak odbicia i cienie; ≈õwiat≈Ça punktowe;
+tekstury, ≈õrodowisko, mapowanie cieni; w pe≈Çni programowalne
+powierzchnie, zaburzenia, ≈õwiat≈Ça, cienie. Pliki wej≈õciowe ze scenami
+i cieniami BMRT sƒÖ w du≈ºej czƒô≈õci zgodne z komercyjnym rendererem tej
+samej firmy o nazwie Entropy, a tak≈ºe z programem PhotoRealistic
 RenderMan.
 
-BMRT nie jest juø dostÍpny. Zamiast niego moøna uøywaÊ Aqsis
+BMRT nie jest ju≈º dostƒôpny. Zamiast niego mo≈ºna u≈ºywaƒá Aqsis
 (http://aqsis.sf.net/).
 
 %prep
